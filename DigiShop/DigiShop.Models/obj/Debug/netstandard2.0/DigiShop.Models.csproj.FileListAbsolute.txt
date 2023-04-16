@@ -1,0 +1,10 @@
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\bin\Debug\netstandard2.0\DigiShop.Models.deps.json
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\bin\Debug\netstandard2.0\DigiShop.Models.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\bin\Debug\netstandard2.0\DigiShop.Models.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.csproj.AssemblyReference.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.AssemblyInfoInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.AssemblyInfo.cs
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.Models\obj\Debug\netstandard2.0\DigiShop.Models.pdb

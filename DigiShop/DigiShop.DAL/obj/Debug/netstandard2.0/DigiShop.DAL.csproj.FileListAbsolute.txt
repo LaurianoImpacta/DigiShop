@@ -1,0 +1,13 @@
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\bin\Debug\netstandard2.0\DigiShop.DAL.deps.json
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\bin\Debug\netstandard2.0\DigiShop.DAL.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\bin\Debug\netstandard2.0\DigiShop.DAL.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\bin\Debug\netstandard2.0\DigiShop.Models.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\bin\Debug\netstandard2.0\DigiShop.Models.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.csproj.AssemblyReference.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.AssemblyInfoInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.AssemblyInfo.cs
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.csproj.CoreCompileInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.csproj.CopyComplete
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.DAL\obj\Debug\netstandard2.0\DigiShop.DAL.pdb

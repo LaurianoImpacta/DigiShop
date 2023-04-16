@@ -1,0 +1,15 @@
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.BLL.deps.json
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.BLL.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.BLL.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.DAL.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.Models.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.DAL.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\bin\Debug\netstandard2.0\DigiShop.Models.pdb
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.csproj.AssemblyReference.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.AssemblyInfoInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.AssemblyInfo.cs
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.csproj.CoreCompileInputs.cache
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.csproj.CopyComplete
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.BLL\obj\Debug\netstandard2.0\DigiShop.BLL.pdb

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DigiShop.Models.Cliente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Clientes</h2>
+
+<p>
+    <div>
+        <a class="btn btn-info" href="/Cliente/Incluir">Novo</a>
+        
+    </div>
+</p>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+    </tr>
+
+    @foreach(var cliente in Model)
+            {
+                <tr>
+                    <td>
+
+                        @Html.ActionLink(cliente.Nome, "Detalhes", new { id = cliente.Id })
+
+                    </td>
+                    <td>@cliente.Telefone</td>
+                    <td>@cliente.Email</td>
+                </tr>
+            }
+
+</table>
