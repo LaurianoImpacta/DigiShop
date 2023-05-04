@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiShop.Models", "DigiShop.Models\DigiShop.Models.csproj", "{E23E34BA-A0E0-4824-9C1D-34DDD44543AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiShop.Models", "DigiShop.Models\DigiShop.Models.csproj", "{E23E34BA-A0E0-4824-9C1D-34DDD44543AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiShop.DAL", "DigiShop.DAL\DigiShop.DAL.csproj", "{CF978369-0752-4B60-A4F1-977FBC1E5CA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiShop.DAL", "DigiShop.DAL\DigiShop.DAL.csproj", "{CF978369-0752-4B60-A4F1-977FBC1E5CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiShop.BLL", "DigiShop.BLL\DigiShop.BLL.csproj", "{C1873309-AB90-4FBE-9963-FBA0075BCB41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiShop.BLL", "DigiShop.BLL\DigiShop.BLL.csproj", "{C1873309-AB90-4FBE-9963-FBA0075BCB41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiShop.UI.Web", "DigiShop.UI.Web\DigiShop.UI.Web.csproj", "{C7F62768-44F9-412F-B3D3-287037E56EFD}"
 EndProject

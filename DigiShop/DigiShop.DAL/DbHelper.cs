@@ -13,7 +13,7 @@ namespace DigiShop.DAL
 {
     public static class DbHelper
     {
-        private static string conexao
+        public static string conexao
         {
             get
             {

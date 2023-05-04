@@ -16,11 +16,7 @@ C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.AppContext.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\vbc.exe
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\vbc.exe.config
@@ -69,3 +65,12 @@ C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\DigiShop.DAL.pdb
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\System.Data.SqlClient.dll
 C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\System.Data.SqlClient.xml
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\csi.exe.config
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Buffers.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Memory.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\armando.lauriano\Desktop\CursoEmVideo\Facu\projeto_01\Projeto_DigiShop\DigiShop\DigiShop.UI.Web\bin\roslyn\System.Threading.Tasks.Extensions.dll

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DigiShop.Models.Produto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Produtos</h2>
+
+<p>
+    <div>
+        <a class="btn btn-info" href="/PRoduto/Incluir">Novo</a>
+        
+    </div>
+</p>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Preco</th>
+        <th>Estoque</th>
+    </tr>
+
+    @foreach(var produto in Model)
+            {
+                <tr>
+                    <td>
+
+                        @Html.ActionLink(produto.Nome, "Detalhes", new { id = produto.Id })
+
+                    </td>
+                    <td>@produto.Preco</td>
+                    <td>@produto.Estoque</td>
+                </tr>
+            }
+
+</table>

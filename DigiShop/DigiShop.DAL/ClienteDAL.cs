@@ -33,7 +33,15 @@ namespace DigiShop.DAL
 
         public Cliente ObterPorEmail(string email)
         {
-            throw new NotImplementedException();
+            Cliente cliente = null;
+            using (var reader = DbHelper.ExecuteReader("CLIENTE_OBTER_POR_EMAIL", "@Email", email))
+            {
+                if (reader.Read())
+                {
+                    cliente = ObterClienteReader(reader);
+                }
+            }
+            return cliente;
         }
 
         public Cliente ObterPorId(string Id)

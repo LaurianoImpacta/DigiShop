@@ -8,7 +8,7 @@ namespace DigiShop.Models
     {
         public string Id {get; set;}
         public string Nome { get; set;}
-        public decimal Preco { get; set;}
-        public int Estoque { get; set;}  
+        public string Preco { get; set;}
+        public string Estoque { get; set;}  
     }
 }

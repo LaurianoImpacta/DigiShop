@@ -26,3 +26,15 @@
 		GO
 
 */
+
+---Armando: Scrip para criação da TABELA PRODUTO da loja DigiShop (03/05/2023)
+/*
+create table PRODUTO (
+			Id varchar(50) primary key,
+			Nome varchar(100),
+			Preco decimal (38),
+			Estoque int,
+		)
+		
+GO
+*/
