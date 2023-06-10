@@ -6,27 +6,29 @@
 
 <h2>Incluir</h2>
 
-<form method="post" class="form-horizontal">
+<form method="post" class="f-horizontal">
 
-    @Html.ValidationSummary(null, new {@class="text-danger"})
+    @Html.ValidationSummary(null, new{@class="text-danger"})
 
-    <div class="form-group">
-        <label class="control-label" for="Nome">Nome: </label>
-        <input class="form-control" type="text" name="Nome" value="@Model.Nome"/>
+    <div>
+        <label class="control-label" for="Nome">Nome:</label>
+        <input class="form-control" type="text" name="Nome" value="@Model.Nome" />
     </div>
 
-    <div class="form-group">
-        <label class="control-label" for="Telefone">Telefone: </label>
+    <div>
+        <label class="control-label" for="Telefone">Telefone:</label>
         <input class="form-control" type="text" name="Telefone" value="@Model.Telefone" />
     </div>
 
-    <div class="form-group">
-        <label class="control-label" for="Email">e-mail: </label>
-        <input class="form-control" type="text" name="Email" value="@Model.Email"/>
+    <div>
+        <label class="control-label" for="Email">Email:</label>
+        <input class="form-control" type="text" name="Email" value="@Model.Email" />
+    </div>
+    <div>
+        <label class="control-label" for=""></label>
+    </div>
+    <div>
+       <input class="btn btn-info" type="submit" value="Gravar" />
     </div>
 
-    <div class="form-group">
-        <input class="btn btn-info" type="submit" value="Gravar" />
-        <a href="/Cliente/Index" class="btn btn-info">Voltar</a>
-    </div>
 </form>

@@ -1,55 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Web;
 using System.Web.Mvc;
 using DigiShop.Models;
-using DigiShop.BLL;
-
 
 namespace DigiShop.UI.Web.Controllers
 {
     public class ProdutoController : Controller
-
     {
-        private ProdutoBLL bll;
+        private IProdutosDados bll;
+
         public ProdutoController()
         {
-            bll = new ProdutoBLL();
-
+            bll = AppContainer.ObterProdutoBLL();
         }
 
-        public ActionResult Excluir(string Id)
+        public ActionResult Excluir(string id)
         {
-            var produto = bll.ObterPorId(Id);
+            var produto = bll.ObterPorId(id);
             return View(produto);
         }
+
         [HttpPost]
-        public ActionResult Excluir(string Id, FormCollection form)
+        public ActionResult Excluir(string id, FormCollection form)
         {
             try
             {
-                bll.Excluir(Id);
+
+                bll.Excluir(id);
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
-                var produto = bll.ObterPorId(Id);
+                var produto = bll.ObterPorId(id);
                 return View(produto);
             }
         }
 
-        public ActionResult Alterar(string Id)
+
+        public ActionResult Alterar(string id)
         {
-            var produto = bll.ObterPorId(Id);
+            var produto = bll.ObterPorId(id);
             return View(produto);
         }
+
         [HttpPost]
         public ActionResult Alterar(Produto produto)
         {
             try
             {
+
                 bll.Alterar(produto);
                 return RedirectToAction("Index");
             }
@@ -60,37 +63,39 @@ namespace DigiShop.UI.Web.Controllers
             }
         }
 
-        public ActionResult Detalhes(string Id)
+        public ActionResult Detalhes(string id)
         {
-            var produto = bll.ObterPorId(Id);
+            var produto = bll.ObterPorId(id);
             return View(produto);
         }
-        //GET: Produto
 
         public ActionResult Incluir()
         {
-            var pro = new Produto();
-            return View(pro);
+            var prod = new Produto();
+            return View(prod);
         }
+
         [HttpPost]
+
         public ActionResult Incluir(Produto produto)
         {
             try
             {
                 bll.Incluir(produto);
                 return RedirectToAction("Index");
-             }
-            catch(Exception ex) 
+            }
+            catch (Exception ex)
             {
-              ModelState.AddModelError (string.Empty, ex.Message);
+                ModelState.AddModelError(string.Empty, ex.Message);
                 return View(produto);
             }
         }
 
-        public ActionResult Index()
+                // GET: Produto
+            public ActionResult Index()
         {
             var lista = bll.ObterTodos();
-            return View(lista);
+            return View(lista); 
         }
     }
 }

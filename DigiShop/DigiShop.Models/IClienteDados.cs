@@ -10,7 +10,7 @@ namespace DigiShop.Models
         void Alterar(Cliente cliente);
         void Excluir(string Id);
         List<Cliente> ObterTodos();
-        Cliente ObterPorId(string Id);
+        Cliente ObterPorId(string id);
         Cliente ObterPorEmail(string email);
     }
 }

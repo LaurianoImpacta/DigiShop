@@ -46,6 +46,25 @@
           }
         }
       },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -831,6 +850,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DigiShop.Models": "1.0.0",
+          "EntityFramework": "6.2.0",
           "Microsoft.Data.SqlClient": "5.1.1",
           "System.Data.SqlClient": "4.8.5"
         },
@@ -844,9 +864,6 @@
       "DigiShop.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Data.SqlClient": "4.8.5"
-        },
         "compile": {
           "bin/placeholder/DigiShop.Models.dll": {}
         },
@@ -893,6 +910,36 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2714,6 +2761,7 @@
     ".NETStandard,Version=v2.0": [
       "DigiShop.DAL >= 1.0.0",
       "DigiShop.Models >= 1.0.0",
+      "EntityFramework >= 6.2.0",
       "NETStandard.Library >= 2.0.3",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -2725,11 +2773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
       "projectName": "DigiShop.BLL",
-      "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
+      "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
       "packagesPath": "C:\\Users\\armando.lauriano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.BLL\\obj\\",
+      "outputPath": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2750,11 +2798,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.DAL\\DigiShop.DAL.csproj": {
-              "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.DAL\\DigiShop.DAL.csproj"
+            "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.DAL\\DigiShop.DAL.csproj": {
+              "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.DAL\\DigiShop.DAL.csproj"
             },
-            "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.Models\\DigiShop.Models.csproj": {
-              "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.Models\\DigiShop.Models.csproj"
+            "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.Models\\DigiShop.Models.csproj": {
+              "projectPath": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.Models\\DigiShop.Models.csproj"
             }
           }
         }
@@ -2769,6 +2817,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -2791,8 +2843,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'EntityFramework 6.2.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-﻿@model DigiShop.Models.Produto 
+﻿@model DigiShop.Models.Produto
 
 @{
     ViewBag.Title = "Alterar";
@@ -10,7 +10,7 @@
 
     @Html.ValidationSummary(null, new { @class = "text-danger" })
 
-    <input type="hidden" name="Id" value="@Model.Id"/>
+    <input type="hidden" name="Id" value="@Model.Id" />
 
     <div class="form-group">
         <label class="control-label" for="Nome">Nome: </label>
@@ -18,13 +18,17 @@
     </div>
 
     <div class="form-group">
-        <label class="control-label" for="Preco">Preco: </label>
-        <input class="form-control" type="text" name="Preco" value="@Model.Preco" />
+        <label class="control-label" for="Estoque">Estoque: </label>
+        <input class="form-control" type="text" name="Estoque" value="@Model.Estoque" />
     </div>
 
     <div class="form-group">
-        <label class="control-label" for="Email">Estoque: </label>
-        <input class="form-control" type="text" name="Estoque" value="@Model.Estoque" />
+        <label class="control-label" for="Preco">Preço: </label>
+        <input class="form-control" type="text" name="Preco" value="@Model.Preco.ToString("c")" />
+    </div>
+
+    <div>
+        <label class="control-label" for=""></label>
     </div>
 
     <div class="form-group">

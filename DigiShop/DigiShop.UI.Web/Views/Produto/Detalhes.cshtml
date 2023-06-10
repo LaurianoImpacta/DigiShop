@@ -10,14 +10,19 @@
     <dt>Nome:</dt>
     <dd>@Model.Nome</dd>
 
-    <dt>Preco:</dt>
-    <dd>@Model.Preco</dd>
-
     <dt>Estoque:</dt>
     <dd>@Model.Estoque</dd>
 
+    <dt>Preço:</dt>
+    <dd>@Model.Preco.ToString("c")</dd>
+
 
 </dl>
+
+<div>
+    <label class="control-label" for=""></label>
+</div>
+
 <div>
     <a href="/Produto/Index" class="btn btn-info">Voltar</a>
     <a href="/Produto/Alterar/@Model.Id" class="btn btn-info">Alterar</a>

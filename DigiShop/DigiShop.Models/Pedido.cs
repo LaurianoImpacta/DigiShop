@@ -6,12 +6,14 @@ namespace DigiShop.Models
 {
     public class Pedido
     {
-        public int Id { get; set; }
+     public int Id { get; set; }
         public DateTime Data { get; set; }
         public Cliente Cliente { get; set; }
         public List<Item> Items { get; set; }
 
         public FormaPagamentoEnum FormaPagamento { get; set; }
+
+        
 
         public class Item
         {
@@ -19,6 +21,7 @@ namespace DigiShop.Models
             public Produto Produto { get; set; }
             public int Quantidade { get; set; }
             public decimal Preco { get; set; }
+
         }
 
     }

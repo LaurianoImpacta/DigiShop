@@ -33,6 +33,11 @@ namespace DigiShop.DAL
 
         public Cliente ObterPorEmail(string email)
         {
+            if(string.IsNullOrEmpty(email))
+            {
+                throw new ApplicationException("O email deve ser informado");
+            }
+
             Cliente cliente = null;
             using (var reader = DbHelper.ExecuteReader("CLIENTE_OBTER_POR_EMAIL", "@Email", email))
             {
@@ -47,12 +52,12 @@ namespace DigiShop.DAL
         public Cliente ObterPorId(string Id)
         {
             Cliente cliente = null;
-            using(var reader=DbHelper.ExecuteReader("CLIENTE_OBTER_POR_ID", "@Id", Id))
+            using (var reader = DbHelper.ExecuteReader("CLIENTE_OBTER_POR_ID", "@Id", Id))
             {
-                if(reader.Read())
+                if (reader.Read())
                 {
                     cliente = ObterClienteReader(reader);
-                 }
+                }
             }
             return cliente;
         }

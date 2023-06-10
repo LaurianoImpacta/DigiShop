@@ -6,63 +6,60 @@ using DigiShop.DAL;
 
 namespace DigiShop.BLL
 {
-    public class ProdutoBLL : IProdutoDados
+    public class ProdutoBLL : IProdutosDados
     {
-        private ProdutoDAL dal;
-        public ProdutoBLL()
+
+        private IProdutosDados dal;
+
+        public ProdutoBLL(IProdutosDados produtosDados) 
         {
-            this.dal = new ProdutoDAL();
+            this.dal = produtosDados;
         }
+
+        public void Validar(Produto produto)
+        {
+            if (String.IsNullOrEmpty(produto.Nome))
+            {
+                throw new Exception("O nome deve ser Informado");
+            }
+
+            if (produto.Preco < 0)
+            {
+                throw new Exception("O preço deve ser maior do que zero");
+            }
+        }
+
+
         public void Alterar(Produto produto)
         {
             Validar(produto);
-            if (string.IsNullOrEmpty(produto.Id))
-            {
-                throw new Exception("O Id deve ser informado")
-;
-            }
             dal.Alterar(produto);
+
         }
 
         public void Excluir(string Id)
         {
-            if (string.IsNullOrEmpty(Id))
-            {
-                throw new Exception("O Id deve ser informado")
-;
-            }
             dal.Excluir(Id);
         }
 
         public void Incluir(Produto produto)
         {
             Validar(produto);
-            if (string.IsNullOrEmpty(produto.Id))
+            if(string.IsNullOrEmpty(produto.Id))
             {
                 produto.Id = Guid.NewGuid().ToString();
             }
-
             dal.Incluir(produto);
         }
 
-        private static void Validar(Produto produto)
+        public Produto ObterPorId(string id)
         {
-            if (string.IsNullOrEmpty(produto.Nome))
-            {
-                throw new ApplicationException("O nome deve ser informado");
-            }
-        }
-
-        public Produto ObterPorId(string Id)
-        {
-            return dal.ObterPorId(Id);
+            return dal.ObterPorId(id);
         }
 
         public List<Produto> ObterTodos()
         {
-
-            var lista = dal.ObterTodos();
-            return lista;
+            return dal.ObterTodos();
         }
     }
 }

@@ -1,74 +1,53 @@
-﻿using System;
+﻿using DigiShop.Models;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Linq;
 using System.Text;
-using DigiShop.Models;
 
 namespace DigiShop.DAL
 {
-    public class ProdutoDAL : IProdutoDados
+    public class ProdutoDAL : IProdutosDados
     {
+        private LojaContext db = new LojaContext();
         public void Alterar(Produto produto)
         {
-            DbHelper.ExecuteNonQuery("PRODUTO_ALTERAR",
-              "@Id", produto.Id,
-              "@Nome", produto.Nome,
-              "@Preco", produto.Preco,
-              "@Estoque", produto.Estoque);
+           var produtoOriginal = ObterPorId(produto.Id);
+            if(produtoOriginal != null) 
+            {
+                produtoOriginal.Nome = produto.Nome;
+                produtoOriginal.Preco = produto.Preco;
+                produtoOriginal.Estoque = produto.Estoque;
+                db.SaveChanges();
+            }
         }
 
-        public void Excluir(string Id)
+        public void Excluir(string id)
         {
-            DbHelper.ExecuteNonQuery("PRODUTO_EXCLUIR", "@Id", Id);
+            var produto = ObterPorId(id);
+            if(produto != null)
+            {
+                db.Produto.Remove(produto);
+                db.SaveChanges();
+            }
         }
 
         public void Incluir(Produto produto)
         {
-            DbHelper.ExecuteNonQuery("PRODUTO_INCLUIR",
-              "@Id", produto.Id,
-              "@Nome", produto.Nome,
-              "@Preco", produto.Preco,
-              "@Estoque", produto.Estoque);
+
+           
+            db.Produto.Add(produto);
+            db.SaveChanges();
         }
 
-        public Produto ObterPorId(string Id)
+        public Produto ObterPorId(string id)
         {
-            Produto produto = null;
-            using (var reader = DbHelper.ExecuteReader("PRODUTO_OBTER_POR_ID", "@Id", Id))
-            {
-                if (reader.Read())
-                {
-                    produto = ObterProdutoReader(reader);
-                }
-            }
+            var produto = db.Produto.Where(m=>m.Id == id).FirstOrDefault();
             return produto;
         }
 
         public List<Produto> ObterTodos()
         {
-            var lista = new List<Produto>();
-            using (var reader = DbHelper.ExecuteReader("PRODUTO_LISTAR"))
-            {
-                while (reader.Read())
-                {
-                    Produto produto = ObterProdutoReader(reader);
-                    lista.Add(produto);
-
-                }
-            }
-            return lista;
+            return db.Produto.ToList();
         }
-
-        private static Produto ObterProdutoReader(SqlDataReader reader)
-        {
-            var produto = new Produto();
-            produto.Id = reader["Id"].ToString();
-            produto.Nome = reader["Nome"].ToString();
-            produto.Preco = reader["Preco"].ToString();
-            produto.Estoque = reader["Estoque"].ToString();
-            return produto;
-        }
-
     }
-
 }

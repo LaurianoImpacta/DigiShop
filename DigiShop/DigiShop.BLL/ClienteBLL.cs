@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DigiShop.DAL;
 using DigiShop.Models;
-using DigiShop.DAL;
+using System;
+using System.Collections.Generic;
 
 namespace DigiShop.BLL
 {
     public class ClienteBLL : IClienteDados
     {
         private ClienteDAL dal;
+
         public ClienteBLL()
         {
             this.dal = new ClienteDAL();
@@ -16,10 +16,12 @@ namespace DigiShop.BLL
         public void Alterar(Cliente cliente)
         {
             Validar(cliente);
+
             if (string.IsNullOrEmpty(cliente.Id))
             {
-                throw new Exception("O Id deve ser informado")
-;            }
+                throw new Exception("O id deve ser informado");
+
+            }
             dal.Alterar(cliente);
         }
 
@@ -27,8 +29,8 @@ namespace DigiShop.BLL
         {
             if (string.IsNullOrEmpty(Id))
             {
-                throw new Exception("O Id deve ser informado")
-;
+                throw new Exception("O id deve ser informado");
+
             }
             dal.Excluir(Id);
         }
@@ -48,23 +50,22 @@ namespace DigiShop.BLL
         {
             if (string.IsNullOrEmpty(cliente.Nome))
             {
-                throw new ApplicationException("O nome deve ser informado");
+                throw new ApplicationException("O nome deve ser informado!");
             }
         }
 
         public Cliente ObterPorEmail(string email)
         {
-            return dal.ObterPorEmail(email);
+            throw new NotImplementedException();
         }
 
-        public Cliente ObterPorId(string Id)
+        public Cliente ObterPorId(string id)
         {
-            return dal.ObterPorId(Id);
+            return dal.ObterPorId(id);
         }
 
         public List<Cliente> ObterTodos()
         {
- 
             var lista = dal.ObterTodos();
             return lista;
         }

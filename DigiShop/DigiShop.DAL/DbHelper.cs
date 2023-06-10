@@ -27,7 +27,7 @@ namespace DigiShop.DAL
         {
             var cn = new SqlConnection(conexao);
             var cmd = new SqlCommand(storedProcedure, cn);
-             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
             PreencherParametros(parametros, cmd);
             cn.Open();
             var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
@@ -35,11 +35,11 @@ namespace DigiShop.DAL
         }
 
 
-            public static int ExecuteNonQuery(string storedProcedure, params object[] parametros)
-            {
+        public static int ExecuteNonQuery(string storedProcedure, params object[] parametros)
+        {
             int retorno = 0;
             using (var cn = new SqlConnection(conexao))
-            { 
+            {
                 using (var cmd = new SqlCommand(storedProcedure, cn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -49,10 +49,10 @@ namespace DigiShop.DAL
                     retorno = cmd.ExecuteNonQuery();
                     cn.Close();
                 }
-            }    
+            }
             return retorno;
 
-            }
+        }
 
         private static void PreencherParametros(object[] parametros, SqlCommand cmd)
         {
@@ -65,4 +65,4 @@ namespace DigiShop.DAL
             }
         }
     }
-   }
+}

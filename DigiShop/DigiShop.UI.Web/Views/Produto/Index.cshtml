@@ -6,31 +6,27 @@
 
 <h2>Produtos</h2>
 
-<p>
-    <div>
-        <a class="btn btn-info" href="/PRoduto/Incluir">Novo</a>
-        
-    </div>
-</p>
+<a class="btn btn-info" href="/Produto/Incluir">Novo</a>
 
 <table class="table">
     <tr>
         <th>Nome</th>
-        <th>Preco</th>
-        <th>Estoque</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+  
     </tr>
 
-    @foreach(var produto in Model)
-            {
-                <tr>
-                    <td>
-
-                        @Html.ActionLink(produto.Nome, "Detalhes", new { id = produto.Id })
-
-                    </td>
-                    <td>@produto.Preco</td>
-                    <td>@produto.Estoque</td>
-                </tr>
-            }
-
+    @foreach (var produto in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(produto.Nome, "Detalhes", new { id = produto.Id })
+            </td>
+            <td>
+                @produto.Estoque
+            </td>
+            <td>@produto.Preco.ToString("c")</td>
+           
+        </tr>
+    }
 </table>

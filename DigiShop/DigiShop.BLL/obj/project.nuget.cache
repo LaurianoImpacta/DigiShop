@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "H+dfrfPTPkWhyPPjM+2b93NFYnakI7BWJkG81hWahtqf1zP87SaKjJRMao8yAcJjOPyvI3hDFsRe/9oOeXSFDw==",
+  "dgSpecHash": "My8oU25s/Cs3MwEbjRpDF5tfFnmQP1du9wg+I6LKPXXjii+eDKjFijcYyqDF3YqORjuxiYPh+rhSwHiuR5rDGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\armando.lauriano\\Desktop\\CursoEmVideo\\Facu\\projeto_01\\Projeto_DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
+  "projectFilePath": "C:\\Users\\armando.lauriano\\Desktop\\DigiShop\\DigiShop\\DigiShop.BLL\\DigiShop.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\armando.lauriano\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
@@ -54,5 +55,16 @@
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\armando.lauriano\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'EntityFramework 6.2.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
